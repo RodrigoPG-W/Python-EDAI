@@ -1,0 +1,41 @@
+#Programa que calcula el área y perímetro de 4 figuras geométricas.
+
+B=10    #Base(Igual para todas las figuras que lo requieran)
+H=5     #Altura(Igual para todas las figuras que lo requieran)
+PI=3.14
+
+#>Triángulo
+def peri_triangulo(lado=4):
+    print ("El perímetro del triángulo es "+str(3*lado))
+
+area_tri=((B*H)/2)
+print("El área del triángulo es "+str(area_tri))
+peri_triangulo()
+
+
+#>Rectángulo
+def peri_rectangulo(base=6,altura=3):
+     print ("El perímetro del rectángulo es "+str(base*altura))
+
+area_rec=(B*H)
+print("El área del rectángulo es "+str(area_rec))
+peri_rectangulo()
+
+#>Círculo
+def area_círculo(PI,radio):
+    return (PI*(radio**2))
+def peri_círculo(PI,radio):
+    return (PI*radio*2)
+
+print("El área del círculo es {}".format(area_círculo(PI,8)))
+print("El perímetro del círculo es {}".format(peri_círculo(PI,8)))
+
+
+#>Trapecio
+baseM=9
+basem=5
+ladoc=3
+area_trap=(((baseM+basem)*H)/2)
+peri_trap=(baseM+basem+ladoc)
+print("El área del trapecio es "+str(area_trap))
+print("El perímetro del trapecio es "+str(peri_trap))
